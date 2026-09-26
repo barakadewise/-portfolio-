@@ -36,12 +36,12 @@ const services = [
   {
     icon: <FaLaptopCode />,
     title: "Web Development",
-    desc: "Fast, responsive web apps built with React, Next.js, and modern backend tools.",
+    desc: "Fast, responsive web apps built with Boostrap 5, Next.js, and modern backend tools.",
   },
   {
     icon: <FaMoneyCheckAlt />,
     title: "Payment Integration",
-    desc: "Secure gateway integrations — M-Pesa, PayPal, and Stripe — for smooth transactions.",
+    desc: "Secure gateway integrations — Selcom pay ,Azampay etc— for smooth transactions.",
   },
   {
     icon: <FaComments />,
