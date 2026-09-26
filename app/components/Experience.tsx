@@ -1,4 +1,3 @@
-
 import { Variants, motion } from "framer-motion";
 import { FaBriefcase, FaCodeBranch, FaLaptopCode } from "react-icons/fa";
 
@@ -15,11 +14,20 @@ const experiences = [
   {
     icon: <FaLaptopCode />,
     role: "Software Developer",
+    company: "Mainstream group Limited",
+    period: "july- 2026 – current",
+    description:
+      "Building heigher perfomance  REST API's with laravel .Developed cross-platform mobile apps using Flutter ",
+    current: true,
+  },
+  {
+    icon: <FaLaptopCode />,
+    role: "Software Developer",
     company: "Bluetick Technologies Limited",
-    period: "Jan 2024 – Present",
+    period: "Jan 2024 –june 2026",
     description:
       "Built responsive and accessible UIs using HTML, Tailwind CSS, and Laravel. Collaborated with cross-functional teams to deliver scalable web apps.",
-    current: true,
+    current: false,
   },
   {
     icon: <FaBriefcase />,
@@ -48,7 +56,6 @@ export default function Experience() {
       className="bg-[#080d1a] py-28 px-10 border-t border-white/5"
     >
       <div className="max-w-[1140px] mx-auto">
-
         {/* section label */}
         <motion.div
           custom={0}
@@ -86,7 +93,8 @@ export default function Experience() {
           className="text-sm leading-[1.85] text-slate-500 max-w-[480px]
                      border-l-2 border-blue-500/30 pl-4 mb-14"
         >
-          A timeline of roles where I've shipped real products and grown as an engineer.
+          A timeline of roles where I've shipped real products and grown as an
+          engineer.
         </motion.p>
 
         {/* timeline */}
@@ -107,9 +115,10 @@ export default function Experience() {
               {/* dot */}
               <span
                 className={`absolute -left-8 top-5 w-[14px] h-[14px] rounded-full border-2 border-[#080d1a]
-                  ${exp.current
-                    ? "bg-emerald-400 shadow-[0_0_12px_#34d399]"
-                    : "bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,.5)]"
+                  ${
+                    exp.current
+                      ? "bg-emerald-400 shadow-[0_0_12px_#34d399]"
+                      : "bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,.5)]"
                   }`}
               />
 
@@ -121,9 +130,11 @@ export default function Experience() {
                 <div className="flex items-start justify-between gap-4 flex-wrap mb-4">
                   <div>
                     {exp.current && (
-                      <span className="inline-block mb-2 font-mono text-[.65rem] font-semibold
+                      <span
+                        className="inline-block mb-2 font-mono text-[.65rem] font-semibold
                                        uppercase tracking-widest text-emerald-400
-                                       bg-emerald-400/10 px-2.5 py-1 rounded-full">
+                                       bg-emerald-400/10 px-2.5 py-1 rounded-full"
+                      >
                         ● Current
                       </span>
                     )}
@@ -134,8 +145,10 @@ export default function Experience() {
                       {exp.company}
                     </p>
                   </div>
-                  <span className="font-mono text-[.72rem] text-slate-500
-                                   bg-slate-800/60 px-3 py-1.5 rounded-full whitespace-nowrap">
+                  <span
+                    className="font-mono text-[.72rem] text-slate-500
+                                   bg-slate-800/60 px-3 py-1.5 rounded-full whitespace-nowrap"
+                  >
                     {exp.period}
                   </span>
                 </div>
